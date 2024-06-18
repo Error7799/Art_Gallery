@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    /* 1. define rows using '' */
+    /* 2. Define what grid area you want seen on the row */
+    grid-template-areas:
+    'navisection navisection navisection navisection navisection navisection'
+    'sidemenua sidemenua bannersection bannersection sidemenub sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footer footer footer footer footer footer'
+    ;
+}
+
+#navisection {
+    background-color: brown;
+    grid-area: navisection;
+}
+
+#bannersection {
+    background-color: rgb(166, 255, 0);
+    grid-area: bannersection;
+}
+
+#maingallery {
+    background-color: blue;
+    grid-area: maingallery;
+}
+
+#footer {
+    background-color: rgb(199, 16, 223);
+    grid-area: footer;
+}
+
+#sidemenua {
+    background-color: rgb(57, 11, 100);
+    grid-area: sidemenua;
+}
+
+#sidemenub {
+    background-color: rgb(255, 0, 0);
+    grid-area: sidemenub;
+}
+
+
+
+/* when writing a media query position it at the very bottom of the css file  */
+@media only screen and (max-width: 600px){
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'navisection navisection navisection navisection navisection navisection'
+            'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+            'bannersection bannersection bannersection bannersection bannersection bannersection'
+            'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+            'maingallery maingallery maingallery maingallery maingallery maingallery'
+            'footer footer footer footer footer footer'
+            ;
+        } }
+
+
+
+
